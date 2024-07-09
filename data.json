@@ -1,0 +1,579 @@
+ [
+   {
+      "id":1,
+      "category":"Formal Wear",
+      "route_category":"Formal-wear",
+      "img":"/Formal-wear/FMWEAR-1.jpg",
+      "products":[
+         {
+          "id":1,
+          "productimg":"/Formal-wear/formal1.1.jpg",
+          "productbrand":"Style Quotient",
+          "productname":"Women Solid PolyMoss Regular Formal Shirt",
+          "route_productname":"Women-Solid-PolyMoss-Regular-Formal-Shirt",
+          "productprice":70,
+          "productoldprice":2000,
+          "review":4.5,
+          "tomorrow":true,
+          "side_image":[
+                  {
+                       "in_image":"/Formal-wear/formal1.1.jpg"
+                   },
+                   {
+                       "in_image":"/Formal-wear/formal1.2.jpg"
+                   },
+                   {
+                     "in_image":"/Formal-wear/formal1.3.jpg"
+                 }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  }
+                
+               ]
+                },
+           {
+              "id":2,
+               "productimg":"/Formal-wear/formal2.jpg",
+               "productbrand":"Zima Leto",
+               "productname":"Women Knitted Fitted Dress",
+               "route_productname":"Women-Knitted-Fitted-Dress",
+               "productprice":110,
+               "productoldprice":2000,
+               "tomorrow":true,
+               "review":4,
+               "side_image":[
+                   {
+                       "in_image":"/Formal-wear/formal2.1.jpg"
+                   },
+                   {
+                       "in_image":"/Formal-wear/formal2.2.jpg"
+                   },
+                   {
+                     "in_image":"/Formal-wear/formal2.3.jpg"
+                 }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":3,
+               "productimg":"/Formal-wear/formal3.jpg",
+               "productbrand":"GRECIILOOKS",
+               "productname":"Women Blazer",
+               "route_productname":"Women-Blazer",
+               "productprice":100,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":true,
+               "side_image":[
+                   {
+                       "in_image":"/Formal-wear/formal3.1.jpg"
+                   },
+                   {
+                       "in_image":"/Formal-wear/formal3.2.jpg"
+                   },
+                   {
+                     "in_image":"/Formal-wear/formal3.3.jpg"
+                 } 
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":4,
+               "productimg":"/Formal-wear/formal4.jpg",
+               "productbrand":"SIRIL",
+               "productname":"Women's Crepe Full Sleeve Formal White Shirt",
+               "route_productname":"Women's-Crepe-Full-Sleeve-Formal-White-Shirt",
+               "productprice":100,
+               "productoldprice":2000,
+               "review":5,
+               "tomorrow":false,
+                "side_image":[
+                   {
+                       "in_image":"/Formal-wear/formal4.1.jpg"
+                   },
+                   {
+                       "in_image":"/Formal-wear/formal4.2.jpg"
+                   },
+                   {
+                     "in_image":"/Formal-wear/formal4.3.jpg"
+                 }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           }
+
+          
+       ]
+
+   },
+
+
+
+   {
+      "id":2,
+      "category":"Casual Wear",
+      "route_category":"Casual-wear",
+       "img":"/Casual-wear/CAWEAR-1.jpg",
+      
+       "products":[
+           {
+              "id":1,
+               "productimg":"/Casual-wear/casual1.jpg",
+               "productbrand":"indie style",
+               "productname":"Oversized t-shirt",
+               "route_productname":"Oversized-t-shirt",
+               "productprice":100,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":false,
+               "side_image":[
+                   {
+                       "in_image":"/Casual-wear/casual1.1.jpg"
+                   },
+                   {
+                       "in_image":"/Casual-wear/casual1.2.jpg"
+                   },
+                   {
+                     "in_image":"/Casual-wear/casual1.3.jpg"
+                 }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":2,
+               "productimg":"/Casual-wear/casual2.jpg",
+               "productbrand":"GRECIILOOKS ",
+               "productname":" Women's Regular Fit Shirt",
+               "route_productname":"Women's-Regular-Fit-Shirt",
+               "productprice":1100,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":true,
+               "side_image":[
+                   {
+                       "in_image":"/Casual-wear/casual2.1.jpg"
+                   },
+                   {
+                       "in_image":"/Casual-wear/casual2.2.jpg"
+                   },
+                   {
+                     "in_image":"/Casual-wear/casual2.3.jpg"
+                 }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":3,
+               "productimg":"/Casual-wear/casual3.jpg",
+               "productbrand":"Leriya Fashion",
+               "productname":"Oversized Corp Shirt for Women ",
+               "route_productname":"Oversized-Corp-Shirt-for-Women",
+               "productprice":289,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":true,
+               "side_image":[
+                   {
+                       "in_image":"/Casual-wear/casual3.1.jpg"
+                   },
+                   {
+                       "in_image":"/Casual-wear/casual3.2.jpg"
+                   },
+                   {
+                     "in_image":"/Casual-wear/casual3.3.jpg"
+                 }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":4,
+               "productimg":"/Casual-wear/casual4.jpg",
+               "productbrand":"indie style",
+               "productname":"long half shirt",
+               "route_productname":"long-half-shirt",
+               "productprice":1100,
+               "productoldprice":2000,
+               "review":4,
+               "tomorrow":false,
+                "side_image":[
+                   {
+                       "in_image":"/Casual-wear/casual4.1.jpg"
+                   },
+                   {
+                       "in_image":"/Casual-wear/casual4.2.jpg"
+                   },
+                   {
+                     "in_image":"/Casual-wear/casual4.3.jpg"
+                 }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+                          }  
+       ]
+   },
+
+
+
+{
+      "id":3,
+      "category":"Club Wear",
+      "route_category":"Club-wear",
+       "img":"/Club-wear/CBWEAR-1.jpg",
+      
+       "products":[
+           {
+              "id":1,
+               "productimg":"/Club-wear/club1.jpg",
+               "productbrand":"ADDYVERO",
+               "productname":"Fold Pleated Bodycon Dress",
+               "route_productname":"Fold-Pleated-Bodycon-Dress",
+               "productprice":472,
+               "productoldprice":2000,
+               "review":3.5,
+               "tomorrow":true,
+               "side_image":[
+                   {
+                       "in_image":"/Club-wear/club1.1.jpg"
+                   },
+                   {
+                       "in_image":"/Club-wear/club1.2.jpg"
+                   }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":2,
+               "productimg":"/Club-wear/club2.jpg",
+               "productbrand":"GRECIILOOKS",
+               "productname":"Women's Mini Dress",
+               "route_productname":"Women's-Mini-Dress",
+               "productprice":399,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":true,
+               "side_image":[
+                   {
+                       "in_image":"/Club-wear/club2.1.jpg"
+                   },
+                   {
+                       "in_image":"/Club-wear/club2.2.jpg"
+                   }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":3,
+               "productimg":"/Club-wear/club3.jpg",
+               "productbrand":"Sheetal Associates",
+               "productname":"Women's Half Sleeve Sweetheart Casual Maxi Dress",
+               "route_productname":"Women's-Half-Sleeve-Sweetheart-Casual-Maxi-Dress",
+               "productprice":377,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":false,
+               "side_image":[
+                   {
+                       "in_image":"/Club-wear/club3.1.jpg"
+                   },
+                   {
+                       "in_image":"/Club-wear/club3.2.jpg"
+                   }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":4,
+               "productimg":"/Club-wear/club4.jpg",
+               "productbrand":"GRECIILOOKS",
+               "productname":"Women Dress",
+               "route_productname":"Women Dress",
+               "productprice":399,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":true,
+                "side_image":[
+                   {
+                       "in_image":"/Club-wear/club4.1.jpg"
+                   },
+                   {
+                       "in_image":"/Club-wear/club4.2.jpg"
+                   }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+                          }  
+       ]
+   }, 
+
+
+{
+      "id":4,
+      "category":"Sports Wear",
+      "route_category":"Sports-wear",
+       "img":"/Sports-wear/SPWEAR-1.jpg",
+      
+       "products":[
+           {
+              "id":1,
+               "productimg":"/Sports-wear/sport1.jpg",
+               "productbrand":"Ap'pulse",
+               "productname":"Women's 1/4 Zip Slimfit Raglan Sleeve Tshirt",
+               "route_productname":"Women's-1/4-Zip-Slimfit-Raglan-Sleeve-Tshirt",
+               "productprice":438,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":true,
+               "side_image":[
+                   {
+                       "in_image":"/Sports-wear/sport1.1.jpg"
+                   },
+                   {
+                       "in_image":"/Sports-wear/sport1.2.jpg"
+                   }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":2,
+               "productimg":"/Sports-wear/sport2.jpg",
+               "productbrand":"NYKD ",
+               "productname":"Support Shaper NYB113, Black, M, 1N",
+               "route_productname":"Support-Shaper-NYB113,-Black,-M,-1N",
+               "productprice":500,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":true,
+               "side_image":[
+                   {
+                       "in_image":"/Sports-wear/sport2.1.jpg"
+                   },
+                   {
+                       "in_image":"/Sports-wear/sport2.2.jpg"
+                   }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":3,
+               "productimg":"/Sports-wear/sport3.jpg",
+               "productbrand":"JUST RIDER",
+               "productname":"Womens Compression Top T-Shirt for Gym Sports Yoga Swimming Running Short Sleeve",
+               "route_productname":"Womens-Compression-Top-T-Shirt-for-Gym-Sports-Yoga-Swimming-Running-Short-Sleeve",
+               "productprice":1100,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":true,
+               "side_image":[
+                   {
+                       "in_image":"/Sports-wear/sport3.1.jpg"
+                   },
+                   {
+                       "in_image":"/Sports-wear/sport3.2.jpg"
+                   }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+               
+           },
+           {
+              "id":4,
+               "productimg":"/Sports-wear/sport4.jpg",
+               "productbrand":"CHKOKKO",
+               "productname":" Women Round Neck Dry Regular Fit Gym Sports Printed T-Shirt",
+               "route_productname":" Women-Round-Neck-Dry-Regular-Fit-Gym-Sports-Printed-T-Shirt",
+               "productprice":1100,
+               "productoldprice":2000,
+               "review":4.5,
+               "tomorrow":false,
+                "side_image":[
+                   {
+                       "in_image":"/Sports-wear/sport4.1.jpg"
+                   },
+                   {
+                       "in_image":"/Sports-wear/sport4.2.jpg"
+                   }
+                ],
+
+        "sizes_product":[
+                  {
+                   "size":"S"
+                  },
+                  {
+                   "size":"M"
+                  },
+                  {
+                   "size":"L"
+                  }
+               ]
+                          }  
+       ]
+   }
+]
+
