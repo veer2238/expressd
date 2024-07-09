@@ -247,18 +247,18 @@ const jsonData = JSON.parse(data);
 
 const updatedJson = jsonData.map(item => {
   if (item.img) {
-    item.img = 'http://' + req.get('host') + item.img;
+    item.img = 'https://' + req.get('host') + item.img;
   }
 
   item.products = item.products.map(product => {
     if (product.productimg) {
-      product.productimg = 'http://' + req.get('host') + product.productimg;
+      product.productimg = 'https://' + req.get('host') + product.productimg;
     }
 
     if (product.side_image) {
       product.side_image = product.side_image.map(a => {
         if (a.in_image) {
-          a.in_image = 'http://' + req.get('host') + a.in_image;
+          a.in_image = 'https://' + req.get('host') + a.in_image;
         }
         return a;
       });
