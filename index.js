@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const fs = require('fs');
+const Razorpay = require("razorpay");
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser')
@@ -17,6 +18,10 @@ app.use(bodyParser.json())
 mongoose.connect('mongodb+srv://nandanipatel057:qPrLJ7hONnX9DfYW@cluster0.v2nbfxj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => console.log("mongodb connected"))
 
+const razorpay = new Razorpay({
+  key_id: "rzp_live_SuU8eaXERrjov5",
+  key_secret: "AqvdvFihNMK0FNKUqUtvB7XV",
+});
 
 //Contact data
 const ContactSchema = new mongoose.Schema({
@@ -231,6 +236,35 @@ const ContactSchema = new mongoose.Schema({
     //  for newsletter table & schema start
 
 
+
+// for payment post
+
+    app.post("/razorpay", async (req, res) => {
+      const payment_capture = 1;
+      const amount = 2; // Amount in paisa
+      const currency = "INR";
+      const { upiId } = req.body;
+    
+      const options = {
+        amount: amount * 100,
+        currency,
+        receipt: "receipt#1",
+        payment_capture,
+        notes: { upiId }, // Add UPI ID to notes (optional)
+      };
+    
+      try {
+        const response = await razorpay.orders.create(options);
+        res.json({
+          id: response.id,
+          currency: response.currency,
+          amount: response.amount,
+        });
+      } catch (error) {
+        console.log(error);
+        res.status(500).send("Something went wrong");
+      }
+    });
 
 //Api fetch of data.json
 
