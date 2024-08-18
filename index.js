@@ -250,19 +250,21 @@ const ContactSchema = new mongoose.Schema({
         currency,
         receipt: "receipt#1",
         payment_capture,
-     
+        
       };
+      
     
       try {
         const response = await razorpay.orders.create(options);
         res.json({
+          success:true,
           id: response.id,
           currency: response.currency,
           amount: response.amount,
         });
       } catch (error) {
         console.log(error);
-        res.status(500).send("Something went wrong");
+        res.status(500).json({success:false,error:'please try again'});
       }
     });
 
