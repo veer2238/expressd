@@ -240,17 +240,17 @@ const ContactSchema = new mongoose.Schema({
 // for payment post
 
     app.post("/razorpay", async (req, res) => {
+      const { amount } = req.body;
       const payment_capture = 1;
-      const amount = 2; // Amount in paisa
       const currency = "INR";
-      const { upiId } = req.body;
+     
     
       const options = {
         amount: amount * 100,
         currency,
         receipt: "receipt#1",
         payment_capture,
-        notes: { upiId }, // Add UPI ID to notes (optional)
+     
       };
     
       try {
