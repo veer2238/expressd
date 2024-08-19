@@ -248,7 +248,7 @@ const ContactSchema = new mongoose.Schema({
         currency: 'INR',
         receipt: "receipt#1",
         payment_capture: '1',
-        method: 'card,upi'
+     
         
       };
       
