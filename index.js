@@ -241,15 +241,14 @@ const ContactSchema = new mongoose.Schema({
 
     app.post("/razorpay", async (req, res) => {
       const { amount } = req.body;
-      const payment_capture = 1;
-      const currency = "INR";
      
     
       const options = {
         amount: amount * 100,
-        currency,
+        currency: 'INR',
         receipt: "receipt#1",
-        payment_capture,
+        payment_capture: '1',
+        method: 'card,upi'
         
       };
       
