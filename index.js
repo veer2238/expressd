@@ -19,8 +19,8 @@ mongoose.connect('mongodb+srv://nandanipatel057:qPrLJ7hONnX9DfYW@cluster0.v2nbfx
 .then(() => console.log("mongodb connected"))
 
 const razorpay = new Razorpay({
-  key_id: "rzp_live_SuU8eaXERrjov5",
-  key_secret: "AqvdvFihNMK0FNKUqUtvB7XV",
+  key_id: process.env.RAZORPAY_KEY_ID,
+  key_secret: process.env.RAZORPAY_KEY_SECRET,
 });
 
 //Contact data
@@ -283,18 +283,18 @@ const jsonData = JSON.parse(data);
 
 const updatedJson = jsonData.map(item => {
   if (item.img) {
-    item.img = 'https://' + req.get('host') + item.img;
+    item.img = 'http://' + req.get('host') + item.img;
   }
 
   item.products = item.products.map(product => {
     if (product.productimg) {
-      product.productimg = 'https://' + req.get('host') + product.productimg;
+      product.productimg = 'http://' + req.get('host') + product.productimg;
     }
 
     if (product.side_image) {
       product.side_image = product.side_image.map(a => {
         if (a.in_image) {
-          a.in_image = 'https://' + req.get('host') + a.in_image;
+          a.in_image = 'http://' + req.get('host') + a.in_image;
         }
         return a;
       });
