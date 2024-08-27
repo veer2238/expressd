@@ -238,76 +238,75 @@ const ContactSchema = new mongoose.Schema({
 
 
 // for payment post
+app.post("/razorpay", async (req, res) => {
+  const { amount } = req.body;
 
-    app.post("/razorpay", async (req, res) => {
-      const { amount } = req.body;
-     
-    
-      const options = {
-        amount: amount * 100,
-        currency: 'INR',
-        receipt: "receipt#1",
-        payment_capture: '1',
-     
-        
-      };
-      
-    
-      try {
-        const response = await razorpay.orders.create(options);
-        res.json({
-          success:true,
-          id: response.id,
-          currency: response.currency,
-          amount: response.amount,
-        });
-      } catch (error) {
-        console.log(error);
-        res.status(500).json({success:false,error:'please try again'});
-      }
+  const options = {
+    amount: amount * 100, // Convert amount to smallest currency unit (e.g., paise for INR)
+    currency: 'INR',
+    receipt: "receipt#1",
+    payment_capture: '1'
+  };
+
+  try {
+    const response = await razorpay.orders.create(options);
+    console.log(response)
+    res.json({
+      success: true,
+      id: response.id,
+      currency: response.currency
     });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, error: 'Please try again' });
+  }
+});
 
 //Api fetch of data.json
 
 app.get('/api/data', (req, res) => {
-const filePath = path.join(__dirname, 'data.json');
+  const filePath = path.join(__dirname, 'data.json');
 
-fs.readFile(filePath, 'utf8', (err, data) => {
-if (err) {
-console.error(err);
-return res.status(500).json({ error: 'Internal Server Error' });
-}
-
-const jsonData = JSON.parse(data);
-
-const updatedJson = jsonData.map(item => {
-  if (item.img) {
-    item.img = 'https://' + req.get('host') + item.img;
-  }
-
-  item.products = item.products.map(product => {
-    if (product.productimg) {
-      product.productimg = 'https://' + req.get('host') + product.productimg;
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      return res.status(500).json({ error: 'Internal Server Error' });
     }
 
-    if (product.side_image) {
-      product.side_image = product.side_image.map(a => {
-        if (a.in_image) {
-          a.in_image = 'https://' + req.get('host') + a.in_image;
+    try {
+      const jsonData = JSON.parse(data);
+
+      const updatedJson = jsonData.map(item => {
+        if (item.img) {
+          item.img = `${req.protocol}://${req.get('host')}${item.img}`;
         }
-        return a;
+
+        item.products = item.products.map(product => {
+          if (product.productimg) {
+            product.productimg = `${req.protocol}://${req.get('host')}${product.productimg}`;
+          }
+
+          if (product.side_image) {
+            product.side_image = product.side_image.map(a => {
+              if (a.in_image) {
+                a.in_image = `${req.protocol}://${req.get('host')}${a.in_image}`;
+              }
+              return a;
+            });
+          }
+
+          return product;
+        });
+
+        return item;
       });
+
+      res.json({ success: true, data: updatedJson });
+    } catch (parseError) {
+      console.error('Error parsing JSON:', parseError);
+      res.status(500).json({ error: 'Internal Server Error' });
     }
-
-    return product;
   });
-
-  return item;
-});
-
-res.json({ success: true, data: updatedJson });
-
-});
 });
 
 
